@@ -6,13 +6,13 @@ const Aoijs = require("aoi.js")
 const bot = new Aoijs.Bot({
   token: process.env.TOKEN,
   prefix: ".", //<- Change whatever with your prefix//
-  mobile: true,
+  mobile: true, //keep this as true
   connectedBots: true
 })
 
 //You can delete it, if already have it//
 bot.status({
-  text: "Music",
+  text: "Music", //put whatever status you want for it
   type: "LISTENING",
   time: 3
 })
